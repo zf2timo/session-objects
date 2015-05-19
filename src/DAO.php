@@ -22,14 +22,14 @@ class DAO {
     protected $value;
 
     /**
-     * @var \DateTime
+     * @var \src\PersonDAO
      */
-    protected $dateTime;
+    protected $person;
 
-    function __construct($id, $name, $value, $dateTime)
+    function __construct($id, $name, $value, $person)
     {
         $this->id = $id;
-        $this->dateTime = $dateTime;
+        $this->person = $person;
         $this->name = $name;
         $this->value = $value;
     }
@@ -38,9 +38,9 @@ class DAO {
     /**
      * @return \DateTime
      */
-    public function getDateTime()
+    public function getPerson()
     {
-        return $this->dateTime;
+        return $this->person;
     }
 
     /**

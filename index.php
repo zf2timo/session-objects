@@ -3,7 +3,7 @@ include 'vendor/autoload.php';
 
 session_start();
 
-$dao = new \src\DAO(1, 'Test', 'Test', new DateTime('2015-01-08 13:37:52'));
+$dao = new \src\DAO(1, 'Test', 'Test', new \src\PersonDAO(1, 'Linus', 'Torvalds'));
 
 echo "Object stored in session:<br>";
 echo '<pre>';
