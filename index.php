@@ -1,5 +1,5 @@
 <?php
-require_once 'src/DAO.php';
+include 'vendor/autoload.php';
 
 session_start();
 
